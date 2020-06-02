@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'Courgette';
+    src: url('../fonts/Courgette-regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald-Regular';
+    src: url('../fonts/Oswald-Regular.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**
+ * GENERAL
+**/
+body{
+    font-family: 'Oswald-Regular', sans-serif;
+}
+h3 {
+    font-family: 'Courgette', sans-serif;
+    font-weight: 600;
+}
+.row {
+    margin-top: 1.5em;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+/**
+ * HEADER
+**/
+header {
+    height: 25em;
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Courgette', sans-serif;
+    color: white;
+}
+.opacity {
+    height: 25em;
+    background: rgba(0, 0, 0, 0.8);
+}
+.navbar {
+    border-bottom: 1px solid gray;
+}
+.navbar-toggler_icon{
+    border: 1px solid #add8e6;
+}
+.navbar .navbar-brand {
+    font-family: 'Courgette', sans-serif;
+}
+.navbar a {
+    color: white;
+}
+.logo-title {
+    text-align: center;
+    margin-top: 6em;
+}
+.logo img {
+    width: 5em;
+}
+
+/**
+ * MAIN
+**/
+main h2{
+    margin: 1.5em;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+main a {
+    text-decoration: none;
+    color: black;
+}
+main a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/**
+ * MAIN ARTICLE
+**/
+article{
+    margin-bottom: 1.5em;
+}
+.img-blog {
+    width: 200px;
+    margin-right: 1.5em;
+}
+
+p {
+    color: lightslategray;
+}
+
+/**
+ * MAIN RIGHT (Recherche, Newsletter, Partager)
+**/
+label {
+    font-family: 'Courgette', sans-serif;
+    font-weight: bold;
+}
+input::placeholder {
+    color: rgb(170, 170, 170);
+}
+.rigth button {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    width: -webkit-fill-available;
+    height: 2em;
+}
+.social-media h6 {
+    font-family: 'Courgette', sans-serif;
+    font-weight: bold;
+}
+.logo-social-media a {
+    margin-right: 1em;
+}
+
+/**
+ * FOOTER
+**/
+footer {
+    height: 15em;
+    background-color: black;
+    color: white;
+}
+.categories, .archives, .media {
+    margin: 3.5em 17em 0 0;
+}
+.categories a, .archives a, .media a{
+    color: white;
+    text-decoration: underline;
+}
+.categories {
+    margin-left: 2em;
+}
+.media {
+    display: block;
+}
+#news-footer-input {
+    height: 2em;
+    width: 10em;
+}
+#btn-news-footer {
+    background: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.footer-social-media i {
+    width: 2em;
+    padding: 0.5em;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    text-align: center;
+}
+
+/**************************** CONTACT ****************************/
+iframe {
+    width: 920px;
+    height: 450px;
+    margin-bottom: 3em;
+}
+.adresse {
+    margin-left: 4em;
+}
+/**************************** RESPONSIVE ****************************/
+/**
+ * TABLETTE
+**/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .logo-title {
+        margin-top: 4em;
+    }
+    .display-none {
+        display: none;
+    }
+    footer {
+        height: 40em;
+    }
+    footer .flex {
+        flex-direction: column;
+    }
+    .categories, .archives, .media {
+        margin: 4em 0 0 2em;
+    }
+    .newsletter-footer .flex {
+        display: flex;
+        flex-direction: row;
+    }
+    /********* CONTACT *******/
+    iframe {
+        width: 100%;
+    }
+}
+
+/**
+ * SMARTPHONE
+**/
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px){
+    .articles-blog .flex {
+        display: block;
+    }
+    .logo-title {
+        margin-top: 4em;
+    }
+    .img-blog {
+        width: 100%;
+        margin: 0.8em 0;
+        text-align: center;
+    }
+    .display-none {
+        display: none;
+    }
+    footer {
+        height: 35em;
+    }
+    footer .flex {
+        flex-direction: column;
+    }
+    .categories, .archives, .media {
+        margin: 2em 0 0 2em;
+    }
+    .newsletter-footer .flex {
+        display: flex;
+        flex-direction: row;
+    }
+    /********* CONTACT *******/
+    iframe {
+        width: 100%;
+    }
+}
