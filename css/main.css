@@ -42,8 +42,11 @@ header {
 .header-team {    
     background-image: url("../img/team/team.jpg");  
 }
-.header-post{
+.header-post {
     background-image: url("../img/articles/suzette/suzette-header.jpg");
+}
+.header-recipe {
+    background-image: url("../img/recipes/paella/paella-header.jpg");
 }
 .opacity {
     height: 25em;
@@ -76,7 +79,6 @@ header {
     margin: 0 auto;
     margin-top: 3em;
 }
-
 
 /**
  * MAIN
@@ -140,11 +142,19 @@ p {
     margin: 1em 0;
 }
 .post-avis .avis-box img {
+    height: 5em;
     width: 5em;
     margin-right: 2em;
 }
 .resp-avis{
     margin-left: 7em;
+}
+
+/**
+ * POST PAGE
+**/
+.sponsored {
+    width: 15em;
 }
 
 /**
@@ -280,5 +290,37 @@ footer {
         width: 10em;
         margin-right: 1em;
         margin-bottom: 1em;
+    }
+    /**
+    * POST PAGE
+    **/
+    .slogan-suzette {
+        margin-top: 2em;
+        font-size: 2em;
+    }
+    .post-author {
+        margin: 2em 0;
+    }
+    .post-author img {
+        height: 30%;
+        width: 30%;
+        margin-right: 1em !important;
+    }
+    .post-form {
+        width: 100%;
+    }
+    .post-author .flex, .avis-box .flex {
+        display: flex;
+    }
+    .post-avis {
+        margin: 2em 0;
+    }
+    .avis-box img, .resp-avis img {
+        margin-right: 1em !important;
+        height: 3em;
+        width: 3em;
+    }
+    .resp-avis {
+        margin-left: 6em !important;
     }
 }
