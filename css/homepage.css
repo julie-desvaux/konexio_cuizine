@@ -18,7 +18,7 @@ body{
     font-family: 'Oswald-Regular', sans-serif;
 }
 h3 {
-    font-family: 'Courgette', sans-serif;
+    font-family: 'Courgette', cursive;
     font-weight: 600;
 }
 .row {
@@ -37,7 +37,7 @@ header {
     background-image: url("../img/header.jpg");
     background-size: cover;
     background-position: center center;
-    font-family: 'Courgette', sans-serif;
+    font-family: 'Courgette', cursive;
     color: white;
 }
 .opacity {
@@ -51,7 +51,10 @@ header {
     border: 1px solid #add8e6;
 }
 .navbar .navbar-brand {
-    font-family: 'Courgette', sans-serif;
+    font-family: 'Courgette', cursive;
+}
+.nav-link {
+    font-family: 'Oswald-Regular', sans-serif;
 }
 .navbar a {
     color: white;
@@ -100,7 +103,7 @@ p {
  * MAIN RIGHT (Recherche, Newsletter, Partager)
 **/
 label {
-    font-family: 'Courgette', sans-serif;
+    font-family: 'Courgette', cursive;
     font-weight: bold;
 }
 input::placeholder {
@@ -114,11 +117,11 @@ input::placeholder {
     height: 2em;
 }
 .social-media h6 {
-    font-family: 'Courgette', sans-serif;
+    font-family: 'Courgette', cursive;
     font-weight: bold;
 }
 .logo-social-media a {
-    margin-right: 1em;
+    margin: 0 0.5em;
 }
 
 /**

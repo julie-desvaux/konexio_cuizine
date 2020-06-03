@@ -18,7 +18,7 @@ body {
     font-family: 'Oswald-Regular', sans-serif;
 }
 h3, h4 {
-    font-family: 'Courgette', sans-serif;
+    font-family: 'Courgette', cursive;
     font-weight: 600;
 }
 .row {
@@ -33,10 +33,10 @@ h3, h4 {
  * HEADER
 **/
 header {
-    height: 25em;    
+    height: 25em;
     background-size: cover;
-    background-position: center center;  
-    font-family: 'Courgette', sans-serif;
+    background-position: center center;
+    font-family: 'Courgette', cursive;
     color: white;
 }
 .header-team {    
@@ -61,11 +61,14 @@ header {
 .navbar-toggler_icon{
     border: 1px solid #add8e6;
 }
-.navbar .navbar-brand {
-    font-family: 'Courgette', sans-serif;
+.navbar-brand {
+    font-family: 'Courgette', cursive;
 }
 .navbar a {
     color: white;
+}
+.nav-link {
+    font-family: 'Oswald-Regular', sans-serif;
 }
 .logo-title {
     text-align: center;
@@ -118,7 +121,7 @@ main a:hover {
     margin-right: 2em;
     margin-bottom: 2em;
 }
-p {
+.img-page-member p {
     text-align: justify;
 }
 
@@ -147,21 +150,72 @@ p {
     margin-right: 2em;
 }
 .resp-avis{
-    margin-left: 7em;
+    margin-left: 7em;    
+    opacity: 0.5;
+}
+.grayscale { 
+    filter: grayscale(100%);
 }
 
 /**
- * POST PAGE
+ * RECIPE PAGE
 **/
+.recipe-food {
+    display: inline-block;
+}
+.recipe-title, .duration {
+    width: fit-content;
+}
+.duration div{
+    height: 2.5em;
+    width: 10em;
+    background-color: #AAAAAA;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 0.5em;
+    padding-top: 0.4em;
+}
+.recipe-food {
+    height: 2em;
+    width: fit-content;
+    margin-bottom: 0.5em;
+    margin-right: 0.3em;
+    padding: 0.2em 1em;
+    background-color: #636363;
+    color: white;
+    border-radius: 14px;    
+}
 .sponsored {
+    height: 10em;
+    margin-top: 3em;
+}
+.sponsored-img img {
     width: 15em;
+}
+.sponsored-img {
+    position: absolute;
+    width: 15em;
+    z-index: 0;
+}
+.sponsored-text {
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    margin-top: -2em;
+    padding: 0.2em 0.3em;
+    background: rgba(156, 156, 156, 0.5);
+    height: 100%;
+    top: 6.5em;
+}
+.sponsored-text p {
+    margin-bottom: 0em;
 }
 
 /**
  * MAIN RIGHT (Recherche, Newsletter, Partager)
 **/
 label {
-    font-family: 'Courgette', sans-serif;
+    font-family: 'Courgette', cursive;
     font-weight: bold;
 }
 input::placeholder {
@@ -175,11 +229,11 @@ input::placeholder {
     height: 2em;
 }
 .social-media h6 {
-    font-family: 'Courgette', sans-serif;
+    font-family: 'Courgette', cursive;
     font-weight: bold;
 }
 .logo-social-media a {
-    margin-right: 1em;
+    margin: 0 0.5em;
 }
 
 /**
@@ -322,5 +376,12 @@ footer {
     }
     .resp-avis {
         margin-left: 6em !important;
+    }
+    /**
+    * RECIPE PAGE
+    **/
+    .sponsored {
+        height: 30em;
+        margin-bottom: -3em !important;
     }
 }
